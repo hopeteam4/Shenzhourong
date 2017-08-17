@@ -1,0 +1,67 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 14px;
+    font-family: "微软雅黑";  }
+
+/*轮播显示*/
+#scroll{
+    overflow: hidden;
+    position: relative;
+    width: 1519px;
+    height: 448px;
+    cursor: pointer;
+}
+/*轮播图片集合*/
+#img_list{
+    position: absolute;
+    left: 0;
+    width: 4557px;
+    height: 448px;
+}
+#img_list li{
+    list-style-type: none;
+    float: left;
+}
+#img_list img{
+    width: 1519px;
+    height: 448px;
+}
+/*轮播底部按钮*/
+#buttons {
+    position: absolute;
+    left: 730px;
+    bottom: 20px;
+}
+#buttons span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    border-radius: 50%;
+}
+#buttons .sty {
+    background: #fff;
+}
+
+/*轮播左右箭头*/
+.arrow {
+    display: none;
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 50px;
+}
+
+#scroll:hover .arrow {
+    display: block;
+}
+#prev {
+    left: 50px;
+    background: url("../img/first_images/prev.png") no-repeat ;
+}
+#next {
+    right: 50px;
+    background: url("../img/first_images/next.png") no-repeat;
+}
+
