@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#new_active_middle{
+    margin: auto;
+}
+#new_active_middle_left{
+     width: 306px;
+     height: auto;
+    float: left;
+    background: #399BC4;
+ }
+#new_active_middle_right{
+    width: 838px;
+    height: auto;
+    float: left;
+    background-color: #F19149;
+}
