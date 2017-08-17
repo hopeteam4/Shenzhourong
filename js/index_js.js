@@ -8,10 +8,10 @@ window.onload=function(){
     var buttons=document.getElementsByTagName("span");
     //绑定事件
     prev.addEventListener("click",function(){
-        scroll("-3038px",0,1519)
+        scroll(0,-3804,-1902)
     });
     next.addEventListener("click",function(){
-        scroll(0,-3038,-1519)
+        scroll(-3804,0,1902)
     });
 
     for(var i=0;i<buttons.length;i++){
@@ -27,7 +27,7 @@ window.onload=function(){
     function scroll(origin,ter,speed){
         var left_val=getStyle(img_list,"left");
         if(left_val===ter){
-            img_list.style.left=origin;
+            img_list.style.left=origin+"px";
             left_val=parseInt(img_list.style.left);
         }else {
             left_val+=speed;
@@ -50,11 +50,11 @@ window.onload=function(){
         //点击span修改class为“on”；
         that.setAttribute("class","sty");
         //控制图片移动到当前位置
-        img_list.style.left=num*(-1519)+"px";
+        img_list.style.left=num*(-1902)+"px";
     }
     //添加定时器
     timer=setInterval(function(){
-        scroll(0,-3038,-1519);
+        scroll(0,-3804,-1902);
     },2000);
 
     getObj("scroll").onmouseover=function(){
@@ -65,7 +65,7 @@ window.onload=function(){
         clearInterval(timer);
         clearInterval(timer1);
         timer1=setInterval(function(){
-            scroll(0,-3038,-1519)
+            scroll(-3804,0,1902)
         },2000);
     }
 

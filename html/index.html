@@ -6,25 +6,158 @@
     <script src="../js/tools.js"></script>
     <script src="../js/index_js.js"></script>
     <link rel="stylesheet" href="../css/index.css">
+    <style>
+        #index_container {
+            width: 1902px;
+            height: 750px;
+        }
+
+        .container_main {
+            margin-top: 60px;
+            width: 1200px;
+            height: 750px;
+        }
+
+        .container_head{
+            width:1200px;
+            height: 150px;
+        }
+        .container_section{
+            float: left;
+            margin-left: 50px;
+            width: 170px;
+            height: 155px;
+        }
+        .container_section dt {
+            width: 170px;
+            height: 120px;
+        }
+
+        #section1{  background: url("../img/first_images/icon2-2.png") no-repeat center;  }
+        #section2{  background: url("../img/first_images/icon3-3.png") no-repeat center;  }
+        #section3{  background: url("../img/first_images/icon102.png") no-repeat center;  }
+        #section4{  background: url("../img/first_images/icon5-5.png") no-repeat center;  }
+        #section5{  background: url("../img/first_images/icon1-5.png") no-repeat center;  }
+
+        .container_section>dd{
+            height: 35px;
+            text-align: center;
+        }
+        .container_section>dd a{
+            color: #959595;
+            font-size: 18px;
+            line-height: 35px;
+            text-decoration: none;
+        }
+        .container_section:hover #section1{  background: url("../img/first_images/icon1.png") no-repeat center;  }
+        .container_section:hover #section2{  background: url("../img/first_images/icon2.png") no-repeat center;  }
+        .container_section:hover #section3{  background: url("../img/first_images/icon3.png") no-repeat center;  }
+        .container_section:hover #section4{  background: url("../img/first_images/icon4.png") no-repeat center;  }
+        .container_section:hover #section5{  background: url("../img/first_images/icon5.png") no-repeat center;  }
+
+    </style>
 </head>
 <body>
-<div id="scroll">
-    <ul id="img_list">
-        <li><a href="#"><img src="../img/first_images/01_11_.jpg" alt=""></a></li>
-        <li><a href="#"><img src="../img/first_images/01%20_10_.jpg" alt=""></a></li>
-        <li><a href="#"><img src="../img/first_images/01_13.jpg" alt=""></a></li>
-        <!--<img src="../img/first_images/01_11_.jpg" alt="">-->
-        <!--<img src="../img/first_images/01%20_10_.jpg" alt="">-->
-        <!--<img src="../img/first_images/01_13.jpg" alt="">-->
-    </ul>
-    <div id="buttons">
-        <span class="sty"></span>
-        <span></span>
-        <span></span>
+<!--网站头部开始-->
+<div id="index_head">
+    <!--轮播图-->
+    <div id="index_scroll">
+        <ul id="img_list">
+            <li><a href="#"><img src="../img/first_images/01_11_.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../img/first_images/01%20_10_.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../img/first_images/01_13.jpg" alt=""></a></li>
+        </ul>
+        <div id="scroll_buttons">
+            <span class="sty"></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="#" id="prev" class="arrow"></a>
+        <a href="#" id="next" class="arrow"></a>
     </div>
-
-    <a href="#" id="prev" class="arrow"></a>
-    <a href="#" id="next" class="arrow"></a>
+    <!--导航栏-->
+    <div id="index_nav">
+        <div class="index_nav_logo"><a href="#"><img src="../img/first_images/logo1.png" alt="logo"></a></div>
+        <ul class="index_nav_list">
+            <li><a href="#">产品服务</a>
+                <ul class="index_second-menu">
+                    <li><a href="#">风控无人机</a></li>
+                    <li><a href="#">信贷管理系统</a></li>
+                    <li><a href="#">大数据征信</a></li>
+                    <li><a href="#">银行资金台规对接</a></li>
+                    <li><a href="#">风控咨询&评分建模</a></li>
+                </ul>
+            </li>
+            <li><a href="#">客户案例</a></li>
+            <li><a href="#">最新动态</a>
+                <ul class="index_second-menu">
+                    <li><a href="#">公司动态</a></li>
+                    <li><a href="#">媒体报道</a></li>
+                    <li><a href="#">行业动态</a></li>
+                </ul>
+            </li>
+            <li><a href="#">关于我们</a>
+                <ul class="index_second-menu">
+                    <li><a href="#">公司介绍</a></li>
+                    <li><a href="#">合作伙伴</a></li>
+                    <li><a href="#">人才招聘</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </li>
+            <li><a href="#">申请试用</a></li>
+            <li>400-8190-416</li>
+        </ul>
+    </div>
+    <!--官方动态-->
+    <div id="index_news">
+        <div id="index_official_dynamic">
+            <h6 class="dynamic_title">官方动态:</h6>
+            <div class="dynamic_show">
+                <ul class="index_new_list">
+                    <li><a href="#">买单侠:医美与蓝领消费金融风控 18/08/17/</a></li>
+                    <li><a href="#">456</a></li>
+                    <li><a href="#">789</a></li>
+                </ul>
+            </div>
+            <span><a href="#">More&gt;</a></span>
+        </div>
+    </div>
+    <div id="index_container">
+        <div class="container_main">
+            <div class="container_head">
+                <a href="#">
+                    <dl class="container_section">
+                        <dt id="section1"></dt>
+                        <dd><a href="#">风控无人机</a></dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl class="container_section">
+                        <dt id="section2"></dt>
+                        <dd><a href="#">信贷管理系统</a></dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl class="container_section">
+                        <dt id="section3"></dt>
+                        <dd><a href="#">大数据征信</a></dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl class="container_section">
+                        <dt id="section4"></dt>
+                        <dd><a href="#">银行资金合规对接</a></dd>
+                    </dl>
+                </a>
+                <a href="#">
+                    <dl class="container_section">
+                        <dt id="section5"></dt>
+                        <dd><a href="#">风控咨询&评分建模</a></dd>
+                    </dl>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
