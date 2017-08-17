@@ -2,14 +2,22 @@
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #399BC4;
+}
+/*主体部分左边导航部分样式*/
 #new_active_middle{
+    width: 1200px;
+    height: auto;
     margin: auto;
 }
 #new_active_middle_left{
      width: 306px;
      height: auto;
-    float: left;
-    background: #399BC4;
+     float: left;
  }
 #new_active_middle_right{
     width: 838px;
@@ -17,3 +25,52 @@
     float: left;
     background-color: #F19149;
 }
+.new_active_sidenav{
+    list-style-type: none;
+    width: 304px;
+    border: 1px solid #e2e2e2;
+}
+.new_active_sidenav li{
+    width: 294px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e2e2e2;
+    background: #EEEEEE;
+}
+.new_active_sidenav a{
+    color:dimgrey;
+}
+.new_active_sidenav_content{
+     width: 304px;
+ }
+.new_active_sidenav_content span{
+    display: block;
+    width: 293px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    margin: 30px 0 20px ;
+    padding-left: 10px;
+    background: #EEEEEE;
+    border: 1px solid gainsboro;
+}
+.new_active_sidenav_content span a{
+    color: gray;
+}
+.new_active_sidenav_content ul{
+    width: 304px;
+    list-style-type: none;
+}
+.new_active_sidenav_content li{
+    padding-left: 10px;
+    width: 294px;
+    height: 28px;
+    font-size: 14px;
+    color: gray;
+}
+.new_active_sidenav_content li a{
+    color: gray;
+}
+/*主体部分右边样式*/
