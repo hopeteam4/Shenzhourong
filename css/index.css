@@ -68,6 +68,9 @@ a{
     background-color: white;
     z-index: 100;
 }
+#index-case-radius .on{
+    background: gray;
+}
 .index-trans{
     text-decoration: none;
     color: white;
