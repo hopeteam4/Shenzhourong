@@ -125,6 +125,14 @@ a{
 #index_boss_sub_first{
     display: block;
 }
+.index_boss_ul img{
+    border: 3px solid rgba(254, 254, 254, 0);
+}
+.index_boss_ul img:hover{
+    border: 3px solid #F19149;
+    border-radius: 50%;
+}
+
 /*最新动态样式*/
 #index_news{
     width: 100%;
