@@ -14,10 +14,6 @@
             text-decoration: none;
         }
 
-        #client_content {
-            background-color: #eeeeee;
-        }
-
         #client_main {
             margin: auto;
             width: 100%;
@@ -29,6 +25,7 @@
             padding-top: 60px;
             padding-right: 320px;
             padding-left: 320px;
+            background-color: #eeeeee;
         }
 
         .client_pic {
@@ -83,18 +80,32 @@
             font-size: 26px;
             line-height: 80px;
         }
-        .client_text_explain>a{
+
+        .client_text_explain > a {
             color: #535353;
             font-size: 12px;
             line-height: 30px;
         }
-        .client_text_point>a{
+
+        .client_text_point > a {
             color: black;
             line-height: 50px;
             font-size: 13px;
             font-weight: bold;
         }
 
+        #client_page {
+            margin: 10px 45%;
+        }
+
+        #client_page > span {
+            color: black;
+        }
+
+        #client_page > span:hover {
+            background: #2597ba;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -135,6 +146,13 @@
                 <p class="client_text_point"><a href="#">点击查看解决方案→</a></p>
             </div>
             <div class="client_pic" id="client_pic_2"><a href="#"></a></div>
+        </div>
+        <div id="client_page">
+            <span>首页</span>
+            <span>上一页</span>
+            <span>1</span>
+            <span>下一页</span>
+            <span>末页</span>
         </div>
     </div>
 </div>
