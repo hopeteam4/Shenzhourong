@@ -199,3 +199,115 @@
     color: #3D9EBC;
 }
 
+/*首页主体部分*/
+#index_container {
+    width: 1902px;
+    height: 750px;
+}
+
+.container_main {
+    margin-top: 60px;
+    width: 1200px;
+    height: 750px;
+}
+
+.container_head{
+    width:1200px;
+    height: 150px;
+}
+.container_section{
+    float: left;
+    margin-left: 50px;
+    width: 170px;
+    height: 155px;
+}
+.container_section dt {
+    width: 170px;
+    height: 120px;
+}
+
+#section1{  background: url("../img/first_images/icon2-2.png") no-repeat center;  }
+#section2{  background: url("../img/first_images/icon3-3.png") no-repeat center;  }
+#section3{  background: url("../img/first_images/icon102.png") no-repeat center;  }
+#section4{  background: url("../img/first_images/icon5-5.png") no-repeat center;  }
+#section5{  background: url("../img/first_images/icon1-5.png") no-repeat center;  }
+
+.container_section>dd{
+    height: 35px;
+    text-align: center;
+}
+.container_section>dd a{
+    color: #959595;
+    font-size: 18px;
+    line-height: 35px;
+    text-decoration: none;
+}
+.container_section:hover #section1{  background: url("../img/first_images/icon1.png") no-repeat center;  }
+.container_section:hover #section2{  background: url("../img/first_images/icon2.png") no-repeat center;  }
+.container_section:hover #section3{  background: url("../img/first_images/icon3.png") no-repeat center;  }
+.container_section:hover #section4{  background: url("../img/first_images/icon4.png") no-repeat center;  }
+.container_section:hover #section5{  background: url("../img/first_images/icon5.png") no-repeat center;  }
+
+#section_details{
+    width: 1200px;
+    height: 578px;
+    border: 1px solid #3D9EBC;
+    background: url("../img/first_images/bg1.png");
+}
+#section_list{
+    overflow: hidden;
+    width: 1200px;
+    height: 550px;
+    list-style-type: none;
+}
+#section_list>li{
+    float: left;
+    margin-top: 100px;
+    width: 1290px;
+    height: 550px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+.section_img{
+    float: left;
+    width: 470px;
+    height: 360px;
+}
+.section_introduce{
+    float: right;
+    margin-right: 150px;
+    width: 630px;
+    height: 480px;
+}
+
+.section_introduce>span{
+    display: block;
+    line-height: 45px;
+    font-size: 36px;
+    color: #2597ba;
+    margin-bottom: 30px;
+}
+.section_introduce>p{
+    width: 100%;
+    height: 245px;
+    line-height: 35px;
+    color: #535353;
+    font-size: 18px;
+}
+.section_introduce>a{
+    display: block;
+    width: 187px;
+    height: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    background: #edab00;
+    text-align: center;
+    margin-top: 34px;
+}
+.section_introduce>a:hover{
+    background: #f60;
+}
+
+/*首页脚部*/

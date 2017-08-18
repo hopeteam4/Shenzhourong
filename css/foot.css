@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "微软雅黑";
+}
+
+#foots_content {
+    width: 1902px;
+    height: 1010px;
+}
+
+#foot_try {
+    width: 1902px;
+    height: 380px;
+    background: url("../img/first_images/bg33.jpg");
+    padding-top: 110px;
+}
+
+#foot_try > p {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+#foot_title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#foot_title_2 {
+    font-size: 18px;
+}
+
+#foot_button {
+    width: 200px;
+    height: 60px;
+    background-color: #edab00;
+    line-height: 60px;
+    font-size: 22px;
+}
+
+#foot_button:hover {
+    background-color: orange;
+}
+
+/*大图结束*/
+.foot_serve {
+    height: 108px;
+    width: 1200px;
+}
+
+.foot_serve > dl {
+    margin: 10px 0;
+}
+
+.foot_serve > dl > dt {
+    float: left;
+    margin-left: 20px;
+}
+
+.foot_serve > dl > dd {
+    float: left;
+    padding-right: 20px;
+    line-height: 100px;
+    font-size: 26px;
+    border-right: solid 1px gainsboro;
+}
+
+#foot_no_border {
+    border-right:0;
+}
+
+#foot_foot {
+    height: 415px;
+    width: 1902px;
+    background-color: gainsboro;
+}
+
+#foot_indexList {
+    width: 1200px;
+    height: 240px;
+    border-bottom: solid 1px black;
+    padding-top: 20px;
+
+}
+
+#foot_indexList_ul {
+    float: left;
+    width: 875px;
+    height: 160px;
+
+}
+
+#foot_indexList_ul a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+#foot_indexList_ul > li {
+    vertical-align: top;
+    display: inline-block;
+    line-height: 60px;
+    width: 150px;
+}
+
+#foot_indexList_ul > li > ul > li {
+    list-style-type: none;
+    font-size: 12px;
+    line-height: 25px;
+
+}
+
+#foot_contact {
+    width: 300px;
+}
+
+#foot_qr_code{
+    margin-top: 30px;
+    float: right;
+}
+
+#foot_copyright {
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
