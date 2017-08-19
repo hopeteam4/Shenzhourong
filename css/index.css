@@ -6,16 +6,16 @@
 a{
     text-decoration: none;
 }
-/*客户案例样式*/
+/*客户案例样式开始*/
+/*轮播样式*/
 #index-customer-case{
     width: 100%;
-    height: 630px;
-    background-color:#EEEEEE;
+    padding: 65px 0px 80px 0px;
+    background: #eee;
 }
 .index-case-p1{
     font-size: 30px;
     color:#399BC4;
-    padding-top: 40px;
     margin-bottom: 32px;
     text-align: center;
 }
@@ -26,38 +26,40 @@ a{
 }
 #index-case-content{
     width:1200px ;
-    height: 400px;
+    height: 462px;
     margin: auto;
     position: relative;
     overflow: hidden;
 }
 #index-case-img{
     width:3600px;
-    height: 400px;
+    height: 462px;
     position: absolute;
+    -webkit-transition: 0.6s ease-in-out left;
+            transition: 0.6s ease-in-out left;
 }
 .index-case-a{
     width: 1200px;
-    height: 400px;
+    height: 462px;
     float: left;
     background: url("../img/first_images/018.jpg");
 }
 .index-case-b{
     float: left;
     width: 1200px;
-    height: 400px;
+    height: 462px;
     background: url("../img/first_images/019.jpg");
 }
 .index-case-c{
     float: left;
     width: 1200px;
-    height: 400px;
+    height: 462px;
     background: url("../img/first_images/020.jpg");
 }
 #index-case-radius{
     position: absolute;
     left: 556px;
-    top: 355px;
+    top: 420px;
 }
 #index-case-radius span{
     display: inline-block;
@@ -75,17 +77,54 @@ a{
     text-decoration: none;
     color: white;
     font-size: 70px;
-    font-family: "Adobe 宋体 Std L";
+    font-family: "宋体";
 }
 #index-trans_left{
     position: absolute;
-    top: 158px;
+    top: 197px;
 }
 #index-trans_right{
     position: absolute;
-    top: 168px;
+    top: 200px;
     left: 1168px;
 }
+/*控制左右箭头的隐藏与出现*/
+.index-trans{
+    display: none;
+}
+#index-case-content:hover .index-trans{
+    display: block;
+}
+/*案例内容样式*/
+.index-case-example{
+    display:block;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 98px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #fff;
+}
+.index-case-example-content{
+    width: 310px;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 70px;
+    line-height: 30px;
+}
+.index-check{
+    display: block;
+    width: 185px;
+    height: 53px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 53px;
+    margin: 45px 0 0 70px;
+    font-size: 18px;
+    color: #fff;
+}
+/*客户案例样式开始*/
 /*CEO样式*/
 #index_boss{
     width: 100%;
@@ -102,53 +141,62 @@ a{
     list-style-type: none;
     margin-bottom: 10px;
 }
-.index_boss_ul>li{
+.index_boss_ul li{
     width:112px ;
     height: 175px;
     float: left;
     margin-left: 70px;
     margin-right: 55px;
-    font-size: 12px;
+    font-size: 14px;
 }
-.index_boss_ul>li>p{
+.index_boss_info{
     text-align: center;
-    margin-top: 5px;
+    line-height: 30px;
     color: white;
 }
-/*CEO切换样式*/
+/*CEO切换样式开始*/
 .index_boss_sub{
+    width: 1200px;
     display: none;
-    text-align: center;
     color: #F19149;
-    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 30px;
+}
+.index_boss_li:hover .index_boss_sub{
+    color: #F19149;
 }
 #index_boss_sub_first{
     display: block;
 }
 .index_boss_ul img{
-    border: 3px solid rgba(254, 254, 254, 0);
+    border: 4px solid rgba(254, 254, 254, 0);
 }
-.index_boss_ul img:hover{
-    border: 3px solid #F19149;
+.index_boss_li:hover img{
+    border: 4px solid #F19149;
     border-radius: 50%;
 }
-
-/*最新动态样式*/
+.index_boss_li:hover .index_boss_info{
+    color: #F19149;
+}
+/*CEO切换样式结束*/
+/*最新动态样式开始*/
 #index_news{
     width: 100%;
-    height: 470px;
-    background:#EEEEEE;
+    height: 530px;
+    background: #ffffff;
 }
 #index_news_content{
     margin: auto;
     width: 1200px;
-    height: 360px;
+    height: auto;
     padding-top: 110px;
 }
 #index_news_content p{
     font-size: 35px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
     color: #399BC4;
 }
 #index_news_content a{
@@ -178,8 +226,7 @@ a{
 .index_news_item li{
     float: left;
     width: 400px;
-    height: 48px;
-    line-height: 48px;
+    line-height: 55px;
     font-size: 14px;
 }
 #index_news_right{
@@ -202,6 +249,44 @@ a{
 #index_news_item_first{
     display: block;
 }
-#index-more{
+#index-more a{
     font-size: 14px;
+    display: block;
+    line-height: 48px;
 }
+/*最新动态样式结束*/
+/*合作伙伴样式开始*/
+.partner {
+    width: 100%;
+    background: #eee;
+    padding: 60px 0 230px;
+}
+.partnerInfo {
+    width: 1200px;
+    margin: 0 auto;
+}
+.partnerInfo span {
+    font-size: 36px;
+    color: #2597ba;
+    line-height: 60px;
+    display: block;
+    text-align: center;
+    padding-bottom: 46px;
+}
+.partnerInfo>ul{
+    list-style-type: none;
+}
+.partnerInfo>ul>li{
+    width: 113px;
+    float: left;
+    border: 2px solid transparent;
+    margin-right: 15px;
+    margin-bottom: 28px;
+}
+.partnerInfo img{
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+.partnerInfo img:hover{
+    border: 2px solid #2597ba;
+}
+/*合作伙伴样式开始*/

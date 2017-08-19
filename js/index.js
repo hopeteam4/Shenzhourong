@@ -18,7 +18,6 @@ window.onload=function(){
     });
     function moving(edge_a,edge_b,speed){
         var left_value=parseInt(index_case_img.style.left);
-        console.log(left_value);
         if(left_value===edge_a){
             left_value=edge_b;
         }
@@ -42,13 +41,15 @@ window.onload=function(){
         for(var i=0;i<radius_span.length;i++){
             radius_span[i].setAttribute("class","");
         }
+        console.log(radius_span[i]);
         that.setAttribute("class" ,"on");
-        console.log(num);
+        //console.log(num);
+        console.log(that);
         index_case_img.style.left=num*-1200+"px";
     }
     timer=setInterval(function(){
         moving(-2400,0,-1200);
-    },1000);
+    },2000);
     index_case_content.onmouseover=function(){
         clearInterval(timer);
         clearInterval(timer1);
@@ -56,11 +57,14 @@ window.onload=function(){
     index_case_content.onmouseout=function(){
         timer1=setInterval(
             function(){moving(-2400,0,-1200)
-            },1000);
+            },2000);
     };
     //领导介绍切换
     var focus_obj1=document.getElementsByClassName("index_boss_li");
-        var details_obj1=document.getElementsByClassName("index_boss_sub");
+    var details_obj1=document.getElementsByClassName("index_boss_sub");
+    var timerb=null;
+    var timerb1=null;
+    var  index_boss_item=getObj("index_boss_item");
         for(var i=0;i<focus_obj1.length;i++){
             focus_obj1[i].index=i;
             focus_obj1[i].onmouseover=function(){
@@ -68,10 +72,28 @@ window.onload=function(){
                     details_obj1[j].style.display="none";
                     focus_obj1[j].style="black";
                 }
-                this.style.color="#f46948";
+                //this.style.color="#f46948";
                 details_obj1[this.index].style.display="block";
             }
         }
+    function slide(num){
+        for(var i=0;i<focus_obj1.length;i++) {
+            focus_obj1[i].index = i;
+            //console.log(i);
+        }
+    }
+    setInterval(function(){
+        slide();
+    },2000);
+    index_boss_item.onmouseover=function(){
+        clearInterval(timerb);
+        clearInterval(timerb1);
+    };
+    index_boss_item.onmouseout=function(){
+        setInterval(function(){
+            slide();
+        },2000);
+    };
     //最新动态切换
     var focus_obj=document.getElementsByClassName("index_news_title_li");
     var details_obj=document.getElementsByClassName("index_news_item");
@@ -80,7 +102,6 @@ window.onload=function(){
         focus_obj[k].onmouseover=function(){
             for(var j=0;j<details_obj.length;j++){
                 details_obj[j].style.display="none";
-                focus_obj[j].style="black";
             }
             details_obj[this.index].style.display="block";
         }

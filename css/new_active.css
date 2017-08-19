@@ -53,6 +53,9 @@ a{
 .new_active_sidenav_content span a{
     color: gray;
 }
+.new_active_sidenav_content span{
+    color: gray;
+}
 .new_active_sidenav_content ul{
     width: 304px;
     list-style-type: none;
@@ -89,6 +92,21 @@ a{
 .new_active_listimg{
     width: 838px;
     height: 258px;
+    overflow: hidden;
+}
+.new_active_listimg img{
+    width: 100%;
+    height: 258px;
+    transition:all 0.6s;
+    -webkit-transition:all 0.6s;
+    -o-transition:all 0.6s;
+    -moz-transition:all 0.6s;
+}
+.new_active_listimg:hover img{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -o-transform:scale(1.1);
 }
 .new_active_listtitle{
     width: 838px;
