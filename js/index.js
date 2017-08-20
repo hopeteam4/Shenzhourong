@@ -62,38 +62,39 @@ window.onload=function(){
     //领导介绍切换
     var focus_obj1=document.getElementsByClassName("index_boss_li");
     var details_obj1=document.getElementsByClassName("index_boss_sub");
-    var timerb=null;
-    var timerb1=null;
+    var index_boss_li_img=document.getElementsByClassName("index_boss_li_img");
+    var index_boss_info=document.getElementsByClassName("index_boss_info");
+    //console.log(getComputedStyle(index_boss_info[0]).color);
+    //console.log(getComputedStyle(index_boss_li_img[0]).border);
+    //var timerb=null;
+    //var timerb1=null;
     var  index_boss_item=getObj("index_boss_item");
         for(var i=0;i<focus_obj1.length;i++){
             focus_obj1[i].index=i;
-            focus_obj1[i].onmouseover=function(){
+            focus_obj1[i].onmouseover=function slide(){
                 for(var j=0;j<details_obj1.length;j++){
                     details_obj1[j].style.display="none";
                     focus_obj1[j].style="black";
+                    index_boss_li_img[j].style.border ="4px solid rgba(254, 254, 254, 0)";
+                    index_boss_info[j].style.color="white";
                 }
-                //this.style.color="#f46948";
                 details_obj1[this.index].style.display="block";
+                index_boss_li_img[this.index].style.border ="4px solid #F19149";
+                index_boss_info[this.index].style.color="#F19149";
             }
         }
-    function slide(num){
-        for(var i=0;i<focus_obj1.length;i++) {
-            focus_obj1[i].index = i;
-            //console.log(i);
-        }
-    }
-    setInterval(function(){
-        slide();
-    },2000);
-    index_boss_item.onmouseover=function(){
-        clearInterval(timerb);
-        clearInterval(timerb1);
-    };
-    index_boss_item.onmouseout=function(){
-        setInterval(function(){
-            slide();
-        },2000);
-    };
+    //setInterval(function(){
+    //    slide();
+    //},2000);
+    //index_boss_item.onmouseover=function(){
+    //    clearInterval(timerb);
+    //    clearInterval(timerb1);
+    //};
+    //index_boss_item.onmouseout=function(){
+    //    setInterval(function(){
+    //        slide();
+    //    },2000);
+    //};
     //最新动态切换
     var focus_obj=document.getElementsByClassName("index_news_title_li");
     var details_obj=document.getElementsByClassName("index_news_item");

@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: '微软雅黑';
+}
+a{
+    text-decoration: none;
+}
+/*客户案例样式开始*/
+/*轮播样式*/
+#production-customer-system{
+    width: 100%;
+    padding: 65px 0px 80px 0px;
+    background: #eee;
+}
+.production-system-p1{
+    font-size: 30px;
+    color:#399BC4;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.production-system-p2{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+#production-system-content{
+    width:1200px ;
+    height: 462px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+#production-system-img{
+    width:3600px;
+    height: 462px;
+    position: absolute;
+    -webkit-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+.production-system-a{
+    width: 1200px;
+    height: 462px;
+    float: left;
+    background: url("../img/first_images/018.jpg");
+}
+.production-system-b{
+    float: left;
+    width: 1200px;
+    height: 462px;
+    background: url("../img/first_images/019.jpg");
+}
+.production-system-c{
+    float: left;
+    width: 1200px;
+    height: 462px;
+    background: url("../img/first_images/020.jpg");
+}
+#production-system-radius{
+    position: absolute;
+    left: 556px;
+    top: 420px;
+}
+#production-system-radius span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: white;
+    z-production: 100;
+}
+#production-system-radius .on{
+    background: gray;
+}
+.production-trans{
+    text-decoration: none;
+    color: white;
+    font-size: 70px;
+    font-family: "宋体";
+    display: none;
+}
+#production-trans_left{
+    position: absolute;
+    top: 197px;
+}
+#production-trans_right{
+    position: absolute;
+    top: 200px;
+    left: 1168px;
+}
+/*控制左右箭头的隐藏与出现*/
+#production-system-content:hover .production-trans{
+    display: block;
+}

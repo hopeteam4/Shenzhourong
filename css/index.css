@@ -10,7 +10,7 @@ a{
 /*轮播样式*/
 #index-customer-case{
     width: 100%;
-    padding: 65px 0px 80px 0px;
+    padding: 65px 0 80px 0;
     background: #eee;
 }
 .index-case-p1{
@@ -78,6 +78,7 @@ a{
     color: white;
     font-size: 70px;
     font-family: "宋体";
+    display: none;
 }
 #index-trans_left{
     position: absolute;
@@ -89,9 +90,6 @@ a{
     left: 1168px;
 }
 /*控制左右箭头的隐藏与出现*/
-.index-trans{
-    display: none;
-}
 #index-case-content:hover .index-trans{
     display: block;
 }
@@ -172,14 +170,15 @@ a{
 }
 .index_boss_ul img{
     border: 4px solid rgba(254, 254, 254, 0);
-}
-.index_boss_li:hover img{
-    border: 4px solid #F19149;
     border-radius: 50%;
 }
-.index_boss_li:hover .index_boss_info{
-    color: #F19149;
-}
+/*.index_boss_li:hover img{*/
+    /*border: 4px solid #F19149;*/
+    /*border-radius: 50%;*/
+/*}*/
+/*.index_boss_li:hover .index_boss_info{*/
+    /*color: #F19149;*/
+/*}*/
 /*CEO切换样式结束*/
 /*最新动态样式开始*/
 #index_news{

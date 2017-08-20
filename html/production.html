@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: '微软雅黑';
+        }
+        a{
+            text-decoration: none;
+        }
+        /*产品系统样式开始*/
+        /*轮播样式*/
+        #production-customer-system{
+            width: 100%;
+            background: #2597BA;
+            color: #fff;
+        }
+        #production-system-content{
+            width:1200px ;
+            height: 500px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #production-system-img{
+            width:3600px;
+            height: 500px;
+            position: absolute;
+            -webkit-transition: 0.6s ease-in-out left;
+            transition: 0.6s ease-in-out left;
+        }
+        .production-system-a{
+            width: 1200px;
+            height: 500px;
+            float: left;
+            background: #2597BA;
+        }
+        .production-system-b{
+            float: left;
+            width: 1200px;
+            height: 500px;
+            background:#2597BA;
+        }
+        .production-system-c{
+            float: left;
+            width: 1200px;
+            height: 500px;
+            background:#2597BA;
+        }
+        /*图片切换轮播样式*/
+        .production-system-approve{
+            background: url("../img/protect_images/icon29.png")no-repeat center center;
+        }
+        .production-system-finance{
+            background: url("../img/protect_images/icon30.png")no-repeat center center;
+        }
+        .production-system-collection{
+            background: url("../img/protect_images/icon31.png")no-repeat center center;
+        }
+        #production-system-radius{
+            margin: auto;
+            width: 1200px;
+            height: 200px;
+        }
+        #production-system-radius span{
+            display: inline-block;
+            padding: 50px;
+            width: 100px;
+            height: 50px;
+            margin-right: 5px;
+            z-index: 100;
+            border:1px solid #56A3D0 ;
+        }
+        #production-system-radius span img{
+
+        }
+        #production-system-radius #on{
+        background:#56A3D0 url("../img/protect_images/icon32.png")no-repeat center center;
+        }
+        /*#production-system-radius #on2{*/
+            /*background:#56A3D0 url("../img/protect_images/icon33.png")no-repeat center center;*/
+        /*}*/
+        /*#production-system-radius #on3{*/
+            /*background:#56A3D0 url("../img/protect_images/icon34.png")no-repeat center center;*/
+        /*}*/
+        .production-trans{
+            text-decoration: none;
+            color: white;
+            font-size: 80px;
+        }
+        #production-trans_left{
+            position: absolute;
+            top: 197px;
+            left: 0;
+        }
+        #production-trans_right{
+            position: absolute;
+            top: 202px;
+            left: 1150px;
+        }
+        /*系统内容样式*/
+        .production-system-content{
+            width: 500px;
+            height: 300px;
+            float: left;
+        }
+        .production-system_content-img{
+            width: 512px;
+            height: 290px;
+            float: left;
+        }
+        .production-system-title a{
+            display: block;
+            width: 500px;
+            height: 80px;
+            font-size: 24px;
+            color: #fff;
+            padding-top: 66px;
+            margin-left: 80px;
+        }
+        .production-system-content{
+            line-height: 25px;
+            margin: 0 80px 0 80px;
+        }
+        /*产品系统样式结束*/
+
+    </style>
+    <script src="../js/common_getid.js"></script>
+    <script src="../js/production.js"></script>
+</head>
+<body>
+<!--切换圆圈-->
+<div id="production-system-radius">
+    <!--背景图-->
+    <span class="production-system-approve" id="on"></span>
+    <span class="production-system-finance" id="on2"></span>
+    <span class="production-system-collection" id="on3"></span>
+</div>
+<!--客户案例-->
+<div id="production-customer-system">
+    <div id="production-system-content">
+        <div id="production-system-img" style="left: 0">
+            <!--审批系统-->
+            <div class="production-system-a">
+                <p class="production-system-title"><a href="#"> 审批系统</a></p>
+                <div class="production-system-content"><br>
+                    <p style="line-height:1.5;font-size:14px;font-family:微软雅黑;">审批系统：提供了端到端的全套系统解决方案，从移动端获客，到审批全流程业务管理，配合自动决策平台和反欺诈模块的使用，真正实现全自动秒贷服务。</p> <br>
+                    <p style="line-height:1.5;font-size:14px;">除了支持传统的基于现金的个人贷款、车辆抵押贷款、房屋抵押贷款等传统业务，在消费金融领域，更是针对商户、商品、自动签约、结算、退换货等提供了一整套业务管理模块，解决消费金融复杂的多方业务关系。</p> <br><br>
+                    <p style="line-height:1.5;font-size:14px;">整个系统，流程节点组合自由、任务分配模式多样、节点跳转灵活、业务功能全面、产品参数丰富，全面支持多商户、多产品、多资方、多套流程的业务体系。</p> <br />
+                    <br />
+                </div>
+                <img class="production-system_content-img" src="../img/protect_images/pic18.png" alt="" />
+            </div>
+            <!--审批系统结束-->
+            <div class="production-system-b">
+                <p class="production-system-title"><a href="#"> 审批系统</a></p>
+                <div class="production-system-content"><br>
+                    <p style="line-height:1.5;font-size:14px;">审批系统：提供了端到端的全套系统解决方案，从移动端获客，到审批全流程业务管理，配合自动决策平台和反欺诈模块的使用，真正实现全自动秒贷服务。</p> <br>
+                    <p style="line-height:1.5;font-size:14px;">除了支持传统的基于现金的个人贷款、车辆抵押贷款、房屋抵押贷款等传统业务，在消费金融领域，更是针对商户、商品、自动签约、结算、退换货等提供了一整套业务管理模块，解决消费金融复杂的多方业务关系。</p> <br><br>
+                    <p style="line-height:1.5;font-size:14px;">整个系统，流程节点组合自由、任务分配模式多样、节点跳转灵活、业务功能全面、产品参数丰富，全面支持多商户、多产品、多资方、多套流程的业务体系。</p> <br />
+                    <br />
+                </div>
+                <img class="production-system_content-img" src="../img/protect_images/pic18.png" alt="" />
+            </div>
+            <div class="production-system-c">
+                <p class="production-system-title"><a href="#"> 审批系统</a></p>
+                <div class="production-system-content"><br>
+                    <p style="line-height:1.5;font-size:14px;">审批系统：提供了端到端的全套系统解决方案，从移动端获客，到审批全流程业务管理，配合自动决策平台和反欺诈模块的使用，真正实现全自动秒贷服务。</p> <br>
+                    <p style="line-height:1.5;font-size:14px;">除了支持传统的基于现金的个人贷款、车辆抵押贷款、房屋抵押贷款等传统业务，在消费金融领域，更是针对商户、商品、自动签约、结算、退换货等提供了一整套业务管理模块，解决消费金融复杂的多方业务关系。</p> <br><br>
+                    <p style="line-height:1.5;font-size:14px;">整个系统，流程节点组合自由、任务分配模式多样、节点跳转灵活、业务功能全面、产品参数丰富，全面支持多商户、多产品、多资方、多套流程的业务体系。</p> <br />
+                    <br />
+                </div>
+                <img class="production-system_content-img" src="../img/protect_images/pic18.png" alt="" />
+            </div>
+        </div>
+        <a class="production-trans" id="production-trans_left">&lt;</a>
+        <a class="production-trans" id="production-trans_right">&gt;</a>
+    </div>
+</div>
+</body>
+</html>
