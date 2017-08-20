@@ -1,0 +1,103 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+}
+
+/*client主体*/
+#client_main {
+    margin: auto;
+    width: 100%;
+}
+
+.client_case {
+
+    height: 410px;
+    padding-top: 60px;
+    padding-right: 320px;
+    padding-left: 320px;
+    background-color: #eeeeee;
+}
+
+.client_pic {
+    width: 500px;
+    height: 300px;
+    float: right;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#client_pic_1 {
+    background-image: url("../img/client_images/01%20_2.jpg");
+}
+
+#client_pic_2 {
+    background-image: url("../img/client_images/01%20_3.jpg");
+}
+
+.client_pic {
+    width: 500px;
+    height: 300px;
+
+}
+
+.client_pic:hover {
+    background-size: 110%;
+}
+
+#client_white {
+    background-color: white;
+}
+
+#client_white_pic {
+    float: left;
+}
+
+#client_white_text {
+    float: right;
+    width: 600px;
+}
+
+.client_text {
+    float: left;
+    width: 600px;
+}
+
+.client_text_title > a {
+    color: #2597ba;
+    font-size: 26px;
+    line-height: 80px;
+}
+
+.client_text_explain > a {
+    color: #535353;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.client_text_point > a {
+    color: black;
+    line-height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#client_page {
+    margin: 10px 45%;
+}
+
+#client_page > span {
+    color: black;
+}
+
+#client_page > span:hover {
+    background: #2597ba;
+    color: white;
+}
