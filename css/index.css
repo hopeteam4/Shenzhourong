@@ -6,14 +6,15 @@
 
 /*首页头部*/
 #index_head {
-    width: 1902px;
+    width: 100%;
+    height: auto;
 }
 
 /*轮播显示*/
 #index_scroll{
     overflow: hidden;
     position: relative;
-    width: 1902px;
+    width:100%;
     height: 560px;
     cursor: pointer;
 }
@@ -21,8 +22,10 @@
 #img_list{
     position: absolute;
     left: 0;
-    width: 5706px;
+    width: 500%;
     height: 560px;
+    -webkit-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
 }
 #img_list li{
     list-style-type: none;
@@ -74,10 +77,14 @@
 
 
 /*首页导航*/
-#index_nav {
+#index_nav_layout{
     position: absolute;
     top: 0;
-    left: 20%;
+    width: 100%;
+    height: 60px;
+}
+
+#index_nav {
     width: 1200px;
     line-height: 60px;
     height: 60px;
@@ -214,9 +221,10 @@
 
 
 /*首页主体部分*/
+
 /*第二个轮播*/
 #index_container {
-    width: 1902px;
+    width: 100%;
 }
 
 #container_main {
@@ -236,20 +244,15 @@
     height: 155px;
 }
 
-#on{
-
-}
-
 .section_title dt {
     width: 170px;
     height: 120px;
 }
-
-#section1{  background: url("../img/first_images/icon2-2.png") no-repeat center;  }
-#section2{  background: url("../img/first_images/icon3-3.png") no-repeat center;  }
-#section3{  background: url("../img/first_images/icon102.png") no-repeat center;  }
-#section4{  background: url("../img/first_images/icon5-5.png") no-repeat center;  }
-#section5{  background: url("../img/first_images/icon1-5.png") no-repeat center;  }
+.section1{  background: url("../img/first_images/icon2-2.png") no-repeat center;  }
+.section2{  background: url("../img/first_images/icon3-3.png") no-repeat center;  }
+.section3{  background: url("../img/first_images/icon102.png") no-repeat center;  }
+.section4{  background: url("../img/first_images/icon5-5.png") no-repeat center;  }
+.section5{  background: url("../img/first_images/icon1-5.png") no-repeat center;  }
 
 .section_title dd{
     text-align: center;
@@ -260,11 +263,18 @@
     line-height: 35px;
     text-decoration: none;
 }
-.section_title:hover #section1{  background: url("../img/first_images/icon1.png") no-repeat center;  }
-.section_title:hover #section2{  background: url("../img/first_images/icon2.png") no-repeat center;  }
-.section_title:hover #section3{  background: url("../img/first_images/icon3.png") no-repeat center;  }
-.section_title:hover #section4{  background: url("../img/first_images/icon4.png") no-repeat center;  }
-.section_title:hover #section5{  background: url("../img/first_images/icon5.png") no-repeat center;  }
+#on .section1{  background: url("../img/first_images/icon1.png") no-repeat center;  }
+#on .section2{  background: url("../img/first_images/icon2.png") no-repeat center;  }
+#on .section3{  background: url("../img/first_images/icon3.png") no-repeat center;  }
+#on .section4{  background: url("../img/first_images/icon4.png") no-repeat center;  }
+#on .section5{  background: url("../img/first_images/icon5.png") no-repeat center;  }
+
+
+/*.section_title:hover #section1{  background: url("../img/first_images/icon1.png") no-repeat center;  }*/
+/*.section_title:hover #section2{  background: url("../img/first_images/icon2.png") no-repeat center;  }*/
+/*.section_title:hover #section3{  background: url("../img/first_images/icon3.png") no-repeat center;  }*/
+/*.section_title:hover #section4{  background: url("../img/first_images/icon4.png") no-repeat center;  }*/
+/*.section_title:hover #section5{  background: url("../img/first_images/icon5.png") no-repeat center;  }*/
 
 /*板块详情*/
 #section_details{
@@ -412,7 +422,6 @@ a{
     text-decoration: none;
     color: white;
     font-size: 70px;
-    font-family: "宋体";
     display: none;
 }
 #index-trans_left{
@@ -459,6 +468,7 @@ a{
     color: #fff;
 }
 /*客户案例样式结束*/
+
 /*CEO样式*/
 #index_boss{
     width: 100%;
