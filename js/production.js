@@ -2,11 +2,11 @@
  * Created by HP on 2017/8/20.
  */
 window.onload=function() {
-    //客户案例轮播
+    //审批系统轮播开始
     var production_system_img = getObj("production-system-img");
     var production_trans_left = getObj("production-trans_left");
     var production_trans_right = getObj("production-trans_right");
-    var radius_span = document.getElementsByTagName("span");
+    var radius_span = document.getElementsByClassName("production-system-img1");
     var production_system_content = getObj("production-system-content");
     var timer = null;
     var timer1 = null;
@@ -30,22 +30,21 @@ window.onload=function() {
         }
         radius_span[left_value / -1200].setAttribute("id", "on")
     }
-
     for (var i = 0; i < radius_span.length; i++) {
         (function (n) {
-            radius_span[n].onclick = function () {
+            radius_span[n].onmouseover = function () {
                 span_control(this, n)
             }
         })(i)
     }
     function span_control(that, num) {
         for (var i = 0; i < radius_span.length; i++) {
-            radius_span[i].setAttribute("class", "");
+            radius_span[i].setAttribute("id", "");
         }
-        console.log(radius_span[i]);
-        that.setAttribute("class", "on");
+        //console.log(radius_span[i]);
+        that.setAttribute("id", "on");
         //console.log(num);
-        console.log(that);
+        //console.log(that);
         production_system_img.style.left = num * -1200 + "px";
     }
     timer = setInterval(function () {
@@ -62,3 +61,4 @@ window.onload=function() {
             }, 2000);
     };
 };
+//审批系统轮播结束

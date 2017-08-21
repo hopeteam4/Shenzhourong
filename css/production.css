@@ -6,90 +6,131 @@
 a{
     text-decoration: none;
 }
-/*客户案例样式开始*/
+/*产品系统样式开始*/
 /*轮播样式*/
 #production-customer-system{
     width: 100%;
-    padding: 65px 0px 80px 0px;
-    background: #eee;
-}
-.production-system-p1{
-    font-size: 30px;
-    color:#399BC4;
-    margin-bottom: 32px;
-    text-align: center;
-}
-.production-system-p2{
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 45px;
+    background: #2597BA;
+    color: #fff;
 }
 #production-system-content{
     width:1200px ;
-    height: 462px;
+    height: 500px;
     margin: auto;
     position: relative;
     overflow: hidden;
 }
 #production-system-img{
     width:3600px;
-    height: 462px;
+    height: 500px;
     position: absolute;
     -webkit-transition: 0.6s ease-in-out left;
     transition: 0.6s ease-in-out left;
 }
 .production-system-a{
     width: 1200px;
-    height: 462px;
+    height: 500px;
     float: left;
-    background: url("../img/first_images/018.jpg");
+    background: #2597BA;
 }
 .production-system-b{
     float: left;
     width: 1200px;
-    height: 462px;
-    background: url("../img/first_images/019.jpg");
+    height: 500px;
+    background:#2597BA;
 }
 .production-system-c{
     float: left;
     width: 1200px;
-    height: 462px;
-    background: url("../img/first_images/020.jpg");
+    height: 500px;
+    background:#2597BA;
 }
+/*图片切换轮播样式*/
 #production-system-radius{
-    position: absolute;
-    left: 556px;
-    top: 420px;
+    margin: auto;
+    width: 1200px;
+    height: 200px;
 }
-#production-system-radius span{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
+.production-system-img1{
+    float: left;
+    width: 200px;
+    height: 150px;
     margin-right: 5px;
-    border-radius: 50%;
-    background-color: white;
-    z-production: 100;
+    border:1px solid #56A3D0 ;
 }
-#production-system-radius .on{
-    background: gray;
+.production-system-img1 dt{
+    width: 200px;
+    height: 150px;
+}
+.section1{
+    background:url("../img/protect_images/icon29.png")no-repeat center 20px;
+}
+.section2{
+    background:url("../img/protect_images/icon30.png")no-repeat center 20px;
+}
+.section3{
+    background:url("../img/protect_images/icon31.png")no-repeat center 20px;
+}
+#on .section1{
+    background:#56A3D0 url("../img/protect_images/icon32.png")no-repeat center 20px;
+}
+#on .section2{
+    background:#56A3D0 url("../img/protect_images/icon33.png")no-repeat center 20px;
+}
+#on .section3{
+    background:#56A3D0 url("../img/protect_images/icon34.png")no-repeat center 20px;
+}
+#on .arrow{
+    width: 200px;
+    height: 32px;
+    background: url("../img/protect_images/icon35.png")no-repeat center center;
+}
+.section_title{
+    color: black;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+#on .section_title{
+    color: white;
 }
 .production-trans{
     text-decoration: none;
     color: white;
-    font-size: 70px;
-    font-family: "宋体";
-    display: none;
+    font-size: 80px;
 }
 #production-trans_left{
     position: absolute;
     top: 197px;
+    left: 0;
 }
 #production-trans_right{
     position: absolute;
-    top: 200px;
-    left: 1168px;
+    top: 202px;
+    left: 1150px;
 }
-/*控制左右箭头的隐藏与出现*/
-#production-system-content:hover .production-trans{
+/*系统内容样式*/
+.production-system-content{
+    width: 500px;
+    height: 300px;
+    float: left;
+}
+.production-system_content-img{
+    width: 512px;
+    height: 290px;
+    float: left;
+}
+.production-system-title a{
     display: block;
+    width: 500px;
+    height: 80px;
+    font-size: 24px;
+    color: #fff;
+    padding-top: 66px;
+    margin-left: 80px;
 }
+.production-system-content{
+    line-height: 25px;
+    margin: 0 80px 0 80px;
+}
+/*产品系统样式结束*/
