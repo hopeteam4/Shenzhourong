@@ -3,6 +3,7 @@ window.onload=function(){
     var scroll_timer=null;
     var scroll_timer1=null;
     var img_list=getObj("img_list");
+    //var index_scroll=getObj()
     var prev=getObj("prev");
     var next=getObj("next");
     var scroll_buttons=document.getElementById("buttons").getElementsByTagName("span");
@@ -19,9 +20,12 @@ window.onload=function(){
         var scroll_left_val=getStyle(img_list,"left");
         if(scroll_left_val===terminal){
             scroll_left_val=origin;
+            img_list.setAttribute("style","transition: 0s ease-in-out left;")
         }else {
             scroll_left_val+=speed;
+            img_list.setAttribute("style","transition: 0.6s ease-in-out left;")
         }
+        console.log(scroll_left_val);
         img_list.style.left=scroll_left_val+"px";
 
         for(var i=0;i<scroll_buttons.length;i++){
@@ -145,6 +149,7 @@ window.onload=function(){
             Switch(0, -4800, -1200)
         },2000);
     };
+
 
     //客户案例轮播
     var index_case_img=getObj("index-case-img");
