@@ -77,11 +77,12 @@
 
 
 /*首页导航*/
-#index_nav_layout{
-    position: absolute;
-    top: 0;
-    width: 100%;
+nav{
+    width: 100vw;
     height: 60px;
+    position: fixed;
+    top:0;
+    z-index: 999;
 }
 
 #index_nav {
@@ -225,6 +226,7 @@
 /*第二个轮播*/
 #index_container {
     width: 100%;
+    height: auto;
 }
 
 #container_main {
@@ -242,17 +244,13 @@
     margin-left: 50px;
     width: 170px;
     height: 155px;
+    cursor: pointer;
 }
 
 .section_title dt {
     width: 170px;
     height: 120px;
 }
-.section1{  background: url("../img/first_images/icon2-2.png") no-repeat center;  }
-.section2{  background: url("../img/first_images/icon3-3.png") no-repeat center;  }
-.section3{  background: url("../img/first_images/icon102.png") no-repeat center;  }
-.section4{  background: url("../img/first_images/icon5-5.png") no-repeat center;  }
-.section5{  background: url("../img/first_images/icon1-5.png") no-repeat center;  }
 
 .section_title dd{
     text-align: center;
@@ -263,6 +261,14 @@
     line-height: 35px;
     text-decoration: none;
 }
+
+.section1{  background: url("../img/first_images/icon2-2.png") no-repeat center;  }
+.section2{  background: url("../img/first_images/icon3-3.png") no-repeat center;  }
+.section3{  background: url("../img/first_images/icon102.png") no-repeat center;  }
+.section4{  background: url("../img/first_images/icon5-5.png") no-repeat center;  }
+.section5{  background: url("../img/first_images/icon1-5.png") no-repeat center;  }
+
+/*切换背景图*/
 #on .section1{  background: url("../img/first_images/icon1.png") no-repeat center;  }
 #on .section2{  background: url("../img/first_images/icon2.png") no-repeat center;  }
 #on .section3{  background: url("../img/first_images/icon3.png") no-repeat center;  }
@@ -270,19 +276,12 @@
 #on .section5{  background: url("../img/first_images/icon5.png") no-repeat center;  }
 
 
-/*.section_title:hover #section1{  background: url("../img/first_images/icon1.png") no-repeat center;  }*/
-/*.section_title:hover #section2{  background: url("../img/first_images/icon2.png") no-repeat center;  }*/
-/*.section_title:hover #section3{  background: url("../img/first_images/icon3.png") no-repeat center;  }*/
-/*.section_title:hover #section4{  background: url("../img/first_images/icon4.png") no-repeat center;  }*/
-/*.section_title:hover #section5{  background: url("../img/first_images/icon5.png") no-repeat center;  }*/
-
 /*板块详情*/
 #section_details{
     overflow: hidden;
     position: relative;
     width: 1200px;
     height: 578px;
-    border: 1px solid #3D9EBC;
     background: url("../img/first_images/bg1.png");
 }
 #section_list{
@@ -374,6 +373,7 @@ a{
     height: 462px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 #index-case-img{
     width:3600px;
@@ -431,7 +431,7 @@ a{
 #index-trans_right{
     position: absolute;
     top: 200px;
-    left: 1168px;
+    left: 1148px;
 }
 /*控制左右箭头的隐藏与出现*/
 #index-case-content:hover .index-trans{
@@ -491,6 +491,7 @@ a{
     margin-left: 70px;
     margin-right: 55px;
     font-size: 14px;
+    cursor: pointer;
 }
 .index_boss_info{
     text-align: center;
@@ -597,6 +598,7 @@ a{
 /*合作伙伴样式开始*/
 .partner {
     width: 100%;
+    height: auto;
     background: #eee;
     padding: 60px 0 230px;
 }

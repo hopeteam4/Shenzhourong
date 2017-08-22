@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/sidebar.css">
     <script src="../js/tools.js"></script>
     <script src="../js/index_js.js"></script>
+    <script src="../js/scroll.js"></script>
+
 </head>
 <body>
 <!--首页头部-->
@@ -15,11 +17,9 @@
     <!--轮播图-->
     <div id="index_scroll">
         <ul id="img_list">
-            <li><a href="#"><img src="../img/first_images/01_13.jpg" alt=""></a></li>
             <li><a href="#"><img src="../img/first_images/01_11_.jpg" alt=""></a></li>
             <li><a href="#"><img src="../img/first_images/01%20_10_.jpg" alt=""></a></li>
             <li><a href="#"><img src="../img/first_images/01_13.jpg" alt=""></a></li>
-            <li><a href="#"><img src="../img/first_images/01_11_.jpg" alt=""></a></li>
         </ul>
         <div id="buttons">
             <span class="on"></span>
@@ -30,40 +30,40 @@
         <a href="#" id="next" class="arrow"></a>
     </div>
     <!--导航栏-->
-<div id="index_nav_layout">
-    <div id="index_nav">
-        <div class="index_nav_logo"><a href="#"><img src="../img/first_images/logo1.png" alt="logo"></a></div>
-        <ul class="index_nav_list">
-            <li><a href="#">产品服务</a>
-                <ul class="index_second-menu">
-                    <li><a href="#">风控无人机</a></li>
-                    <li><a href="#">信贷管理系统</a></li>
-                    <li><a href="#">大数据征信</a></li>
-                    <li><a href="#">银行资金台规对接</a></li>
-                    <li><a href="#">风控咨询&评分建模</a></li>
-                </ul>
-            </li>
-            <li><a href="#">客户案例</a></li>
-            <li><a href="#">最新动态</a>
-                <ul class="index_second-menu">
-                    <li><a href="#">公司动态</a></li>
-                    <li><a href="#">媒体报道</a></li>
-                    <li><a href="#">行业动态</a></li>
-                </ul>
-            </li>
-            <li><a href="#">关于我们</a>
-                <ul class="index_second-menu">
-                    <li><a href="#">公司介绍</a></li>
-                    <li><a href="#">合作伙伴</a></li>
-                    <li><a href="#">人才招聘</a></li>
-                    <li><a href="#">联系我们</a></li>
-                </ul>
-            </li>
-            <li><a href="#">申请试用</a></li>
-            <li>400-8190-416</li>
-        </ul>
-    </div>
-</div>
+    <nav>
+        <div id="index_nav">
+            <div class="index_nav_logo"><a href="#"><img src="../img/first_images/logo1.png" alt="logo"></a></div>
+            <ul class="index_nav_list">
+                <li><a href="#">产品服务</a>
+                    <ul class="index_second-menu">
+                        <li><a href="#">风控无人机</a></li>
+                        <li><a href="#">信贷管理系统</a></li>
+                        <li><a href="#">大数据征信</a></li>
+                        <li><a href="#">银行资金台规对接</a></li>
+                        <li><a href="#">风控咨询&评分建模</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">客户案例</a></li>
+                <li><a href="#">最新动态</a>
+                    <ul class="index_second-menu">
+                        <li><a href="#">公司动态</a></li>
+                        <li><a href="#">媒体报道</a></li>
+                        <li><a href="#">行业动态</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">关于我们</a>
+                    <ul class="index_second-menu">
+                        <li><a href="#">公司介绍</a></li>
+                        <li><a href="#">合作伙伴</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">申请试用</a></li>
+                <li><a href="">400-8190-416</a></li>
+            </ul>
+        </div>
+    </nav>
     <!--官方动态-->
     <div id="official">
         <div id="official_news">
@@ -91,7 +91,7 @@
 <div id="index_container">
     <div id="container_main">
         <div class="container_head">
-            <dl class="section_title">
+            <dl class="section_title" id="on">
                 <dt class="section1"></dt>
                 <dd><a href="#">风控无人机</a></dd>
             </dl>
@@ -430,8 +430,8 @@
             </div>
         </li>
         <li class="list3"><a href="#"></a></li>
+        <li class="list4" id="list4"><a href="#"></a></li>
     </ul>
 </div>
-
 </body>
 </html>

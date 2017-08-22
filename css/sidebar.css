@@ -9,10 +9,10 @@
 
 #sidebar ul li {
     list-style-type: none;
+    position: relative;
     width: 60px;
     height: 60px;
     border: 1px solid #2597ba;
-    position: relative;
     background: #fff;
     margin-bottom: 5px;
 }
@@ -31,6 +31,10 @@
 
 #sidebar ul .list3{
     background: #ffffff url("../img/about_images/icon18.png") no-repeat center;}
+
+#sidebar ul .list4{
+    display: none;
+    background: #ffffff url("../img/about_images/icon19.png") no-repeat center;}
 
 #sidebar .list_none1{
     display: none;
@@ -84,4 +88,8 @@
 
 #sidebar .list3:hover{
     background: #ffffff url("../img/about_images/icon18dzf.png") no-repeat center;
+}
+
+#sidebar .list4:hover{
+    background: #ffffff url("../img/about_images/icon19_dzf.png") no-repeat center;
 }

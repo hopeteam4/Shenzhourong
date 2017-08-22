@@ -15,10 +15,15 @@
 }
 
 /*首页导航*/
+nav{
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    top:0;
+    z-index: 999;
+}
 #nav {
-    position: absolute;
-    top: 0;
-    left: 352px;
+
     width: 1200px;
     line-height: 60px;
     height: 60px;

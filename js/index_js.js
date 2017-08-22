@@ -23,7 +23,6 @@ window.onload=function(){
             scroll_left_val+=speed;
         }
         img_list.style.left=scroll_left_val+"px";
-        console.log(img_list.style.left);
 
         for(var i=0;i<scroll_buttons.length;i++){
             scroll_buttons[i].setAttribute("class","");
