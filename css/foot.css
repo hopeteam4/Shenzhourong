@@ -8,25 +8,35 @@
     height: 1010px;
 }
 
+#foot_img{
+    overflow: hidden;
+    width: 1902px;
+    height: 490px;
+    background: #000;
+}
+
 #foot_try {
-    width: 100%;
-    height: 380px;
-    background: url("../img/first_images/bg33.jpg");
-    background-position: bottom;
-    padding-top: 110px;
+    width: 1902px;
+    height: 490px;
     transition: all 2s ease-in-out;
 }
 
-#foot_try > p {
-    color: white;
+.foot_text{
+    position: absolute;
+    top: -380px;
+    left: 300px;
+    width:600px;
+    height:240px ;
+    color: #fff;
     text-align: center;
-    margin-top: 30px;
+}
 
+.foot_text p{
+    margin-top: 30px;
 }
 
 #foot_title {
     font-size: 36px;
-    font-weight: bold;
 }
 
 #foot_title_2 {
@@ -48,6 +58,7 @@
 
 /*大图结束*/
 .foot_serve {
+    position: relative;
     height: 120px;
     width: 1200px;
 }

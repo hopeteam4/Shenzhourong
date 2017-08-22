@@ -37,10 +37,10 @@ document.onscroll = function () {
     var dis = document.getElementById("foot_try").offsetTop;//获取对象相对于版面的高
     var scl_top = document.documentElement.scrollTop || document.body.scrollTop;//scrollTop为滚动条滑动的距离
 
-    if (scl_top - dis > -300) {
-        foot_pic.style.transform = "translate(0,8px)"
-    } else if (scl_top - dis < -300) {
-        foot_pic.style.transform = "translate(0,-8px)"
+    if (scl_top - dis > -100) {
+        foot_pic.style.transform = "translate(0,10px)"
+    } else if (scl_top - dis < -100) {
+        foot_pic.style.transform = "translate(0,-10px)"
     }
 
 };

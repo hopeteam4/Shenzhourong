@@ -3,7 +3,7 @@ window.onload=function(){
     var scroll_timer=null;
     var scroll_timer1=null;
     var img_list=getObj("img_list");
-    //var index_scroll=getObj()
+    var index_scroll=getObj("index_scroll");
     var prev=getObj("prev");
     var next=getObj("next");
     var scroll_buttons=document.getElementById("buttons").getElementsByTagName("span");
@@ -17,7 +17,7 @@ window.onload=function(){
 
     //事件处理函数
     function Scroll(origin,terminal,speed){
-        var scroll_left_val=getStyle(img_list,"left");
+        var scroll_left_val=parseInt(img_list.style.left);
         if(scroll_left_val===terminal){
             scroll_left_val=origin;
             img_list.setAttribute("style","transition: 0s ease-in-out left;")
@@ -55,11 +55,11 @@ window.onload=function(){
         Scroll(0,-3804,-1902)
     },2000);
 
-    img_list.onmouseover=function(){
+    index_scroll.onmouseover=function(){
         clearInterval(scroll_timer);
         clearInterval(scroll_timer1)
     };
-    img_list.onmouseout=function(){
+    index_scroll.onmouseout=function(){
         scroll_timer1=setInterval(function(){
             Scroll(0,-3804,-1902)
         },2000);
