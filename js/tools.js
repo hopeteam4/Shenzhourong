@@ -12,21 +12,44 @@ function getStyle(obj,attr){
         return parseInt(getComputedStyle(obj,false)[attr]);
     }
 }
-function getElementsByClassName(cName)  {
-    if (document.getElementsByClassName)
-        return document.getElementsByClassName(cName);
+function eventHandler(event_type,ele,event_handle,isBubble){
+    var reg=/#/;
+    var reg1=/\./;
+    var obj;
+    if (reg.test(ele)){
+        obj=ele.substring(1);
+        obj=document.getElementById(obj);
+    }
+    else if(reg1.test(ele)){
+        obj=ele.substring(1);
+        obj=document.getElementsByClassName(obj)[0];
+    }
     else {
-        var arr = [];
-        var allElements = document.getElementsByTagName('*');
-        for (var i = 0; i < allElements.length; i++) {
-            var allCNames = allElements[i].className.split(' ');
-            for (var j = 0; j < allCNames.length; j++) {
-                if (allCNames[j] == cName) {
-                    arr.push(allElements[i]);
+        obj=document.getElementsByTagName(ele)[0];
+    }
+    if(document.all){
+        obj.attachEvent("on"+event_type,event_handle,isBubble);
+    }
+    else {
+        obj.addEventListener(event_type,event_handle,!isBubble);
+    }
+
+}
+//解决IE8之类不支持getElementsByClassName
+if (!document.getElementsByClassName) {
+    document.getElementsByClassName = function (className, element) {
+        var children = (element || document).getElementsByTagName('*');
+        var elements = [];
+        for (var i = 0; i < children.length; i++) {
+            var child = children[i];
+            var classNames = child.className.split(' ');
+            for (var j = 0; j < classNames.length; j++) {
+                if (classNames[j] = className) {
+                    elements.push(child);
                     break;
                 }
             }
         }
-        return arr;
-    }
+        return elements;
+    };
 }

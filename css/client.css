@@ -15,12 +15,14 @@ a {
 }
 
 .client_case {
-
     height: 410px;
     padding-top: 60px;
-    padding-right: 320px;
-    padding-left: 320px;
     background-color: #eeeeee;
+}
+.client_case_content{
+    height: 410px;
+    width: 1200px;
+    margin: auto;
 }
 
 .client_pic {
@@ -90,7 +92,8 @@ a {
 }
 
 #client_page {
-    margin: 10px 45%;
+    margin:20px auto;
+    text-align: center;
 }
 
 #client_page > span {

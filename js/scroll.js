@@ -1,6 +1,6 @@
 document.onscroll = function () {
 //        导航吸顶
-
+    //获取DOM节点
     var nav = document.getElementsByTagName("nav")[0];
     var nav_img = nav.getElementsByTagName("img")[0];
     var nav_a = nav.getElementsByTagName("a");
@@ -20,8 +20,9 @@ document.onscroll = function () {
         }
     }
 
-//    侧栏下滑出现
 
+
+//        侧栏下滑出现
     var top = document.body.scrollTop || document.documentElement.scrollTop;
     var list4 = getObj("list4");
     if (top > 700) {
@@ -31,16 +32,15 @@ document.onscroll = function () {
         list4.setAttribute("style", "");
     }
 
-//    底部动画
 
+//    底部背景动画
     var foot_pic = document.getElementById("foot_try");//获取div
     var dis = document.getElementById("foot_try").offsetTop;//获取对象相对于版面的高
     var scl_top = document.documentElement.scrollTop || document.body.scrollTop;//scrollTop为滚动条滑动的距离
 
-    if (scl_top - dis > -100) {
+    if (scl_top - dis > -200) {
         foot_pic.style.transform = "translate(0,10px)"
-    } else if (scl_top - dis < -100) {
+    } else if (scl_top - dis < -200) {
         foot_pic.style.transform = "translate(0,-10px)"
     }
-
-};
+    };

@@ -9,6 +9,9 @@ a{
 #new_active_middle a:hover{
     color: #399BC4;
 }
+ul{
+    list-style-type: none;
+}
 /*主体部分左边导航部分样式*/
 #new_active_middle{
     width: 1200px;
@@ -21,7 +24,6 @@ a{
      float: left;
  }
 .new_active_sidenav{
-    list-style-type: none;
     width: 304px;
     border: 1px solid #e2e2e2;
 }
@@ -54,12 +56,9 @@ a{
 .new_active_sidenav_content span a{
     color: gray;
 }
-.new_active_sidenav_content span{
-    color: gray;
-}
 .new_active_sidenav_content ul{
     width: 304px;
-    list-style-type: none;
+    /*list-style-type: none;*/
 }
 .new_active_sidenav_content li{
     padding-left: 10px;
@@ -78,9 +77,6 @@ a{
     float: left;
     margin-left: 10px;
     margin-right: 30px;
-}
-#new_active_middle_right ul{
-    list-style-type: none;
 }
 #new_active_middle_right li{
     border-bottom: 1px solid #eaeaea;
